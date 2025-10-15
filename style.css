@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    background-color: #0e091a;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #160d36;
+    color: rgb(98, 0, 255);
+    cursor: pointerr;
+}
+
+.kale h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.kale p {
+    margin: 5px 0 0 0;
+    font-size: 1em;
+    color: #ffcc00;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about{
+    animation: slideUpFade 1s ease-out forwards;
+}
+
+.profile-card {
+    background-color: #2c2f4a;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 0 10px #000;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-card img:hover{
+    transform: scale(1.05);
+}
+
+.profile-card h2 {
+    margin: 10px 0 5px 0;
+}
+
+.profile-card p {
+    margin: 5px 0;
+}
+
+.profile-card a{
+    color: #f0f0f0;
+    transition: color 0.3s ease-in-out; 
+}
+
+.profile-card a:hover{
+    color: #0084ff;
+}
+
+
+footer {
+    background-color: #27293d;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+}
