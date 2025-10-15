@@ -1,4 +1,4 @@
-const username = "ItIsMrNJ";
+const username = "Username";
 const profileDiv = document.getElementById("profile");
 
 fetch(`https://api.github.com/users/${username}`)
@@ -19,4 +19,5 @@ fetch(`https://api.github.com/users/${username}`)
     })
     .catch(error => {
         profileDiv.innerHTML = `<p>خطا: ${error.message}</p>`;
+
     });
